@@ -10,7 +10,7 @@
 <meta property="og:description" content="Published op-eds, CAGW blogs, and studies.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alecmena.com/">
-<meta property="og:image" content="https://alecmena.com/Josh_tree_cropped.jpg">
+<meta property="og:image" content="https://alecmena.com/Josh%20tree%20cropped.jpg">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26' font-family='Georgia,serif'>A</text></svg>">
 <style>
   html { -webkit-text-size-adjust: 100%; }
@@ -58,6 +58,25 @@
   margin:0 0 26px;
   background:#101c2c;
 }
+
+.am-page .am-intro{
+  display:flex;
+  gap:26px;
+  align-items:flex-start;
+  margin:0 0 38px;
+}
+.am-page .am-portrait{
+  flex:0 0 200px;
+  width:200px;
+  aspect-ratio:2/3;
+  object-fit:cover;
+  object-position:center 30%;
+  border-radius:3px;
+  display:block;
+  background:#efeceb;
+}
+.am-page .am-introtext{min-width:0;}
+.am-page .am-introtext .am-bio:last-of-type{margin-bottom:0;}
 
 .am-page .am-name{
   font-size:2.1rem;
@@ -122,21 +141,29 @@
   .am-page{font-size:16px;}
   .am-page .am-name{font-size:1.7rem;}
   .am-page .am-hero{aspect-ratio:4/3;margin-bottom:20px;}
+  .am-page .am-intro{flex-direction:column;gap:18px;}
+  .am-page .am-portrait{flex:none;width:158px;}
   .am-page .am-count{float:none;display:block;margin-top:4px;}
 }
 </style>
 
 <div class="am-page">
 
-  <img class="am-hero" src="Josh_tree_cropped.jpg"
+  <img class="am-hero" src="Josh%20tree%20cropped.jpg"
        alt="Snow-covered boulder formations beneath a star-filled night sky."
        decoding="async">
 
-  <h1 class="am-name">Alec Mena</h1>
+  <div class="am-intro">
+    <img class="am-portrait" src="Kirk%20library.jfif"
+         alt="Alec Mena" decoding="async">
+    <div class="am-introtext">
+      <h1 class="am-name">Alec Mena</h1>
 
-  <p class="am-bio">Alec Mena serves as State Government Affairs Manager for Citizens Against Government Waste (CAGW), a private, non-partisan, non-profit advocacy organization, where he tracks activities in the state legislatures, shedding light on costly public spending and regulation across the fifty states. He also writes on tech and telecom issues for the Innovation &amp; Technology Policy Center (ITPC) and serves as the organization’s liaison with state-based think tanks and advocacy groups.</p>
+      <p class="am-bio">Alec Mena serves as State Government Affairs Manager for Citizens Against Government Waste (CAGW), a private, non-partisan, non-profit advocacy organization, where he tracks activities in the state legislatures, shedding light on costly public spending and regulation across the fifty states. He also writes on tech and telecom issues for the Innovation &amp; Technology Policy Center (ITPC) and serves as the organization’s liaison with state-based think tanks and advocacy groups.</p>
 
-  <p class="am-bio">Alec graduated with high honors from Hillsdale College in 2019 and is pursuing a master’s degree in public policy at George Mason University. His primary research interests focus on interstate fiscal and regulatory competition.</p>
+      <p class="am-bio">Alec graduated with high honors from Hillsdale College in 2019 and is pursuing a master’s degree in public policy at George Mason University. His primary research interests focus on interstate fiscal and regulatory competition.</p>
+    </div>
+  </div>
 
 
   <!-- ===================== OP-EDS ===================== -->
